@@ -1,0 +1,29 @@
+#weatherMain{
+    display:block;
+    color:white;
+    background: black;
+    background: linear-gradient(black,rgb(1, 1, 145));
+    border-radius: 15px;
+    width:400px;
+    height:400px;
+    margin:0 auto;
+    Font-family:  'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+
+}
+.data_row{
+    display:block;
+    width:fit-content;
+    margin:0 auto;
+}
+.sun{
+    color:rgb(233, 233, 54);
+    font-size: 50px;
+    margin-top: 10px;
+    filter: drop-shadow(1px 1px 10px yellow);
+}
+.moon{
+    color:white;
+    font-size: 50px;
+    margin-top: 10px;
+    filter: drop-shadow(1px 1px 10px white);
+}

@@ -1,0 +1,10 @@
+
+<div id="weatherMain">
+    <div *ngIf="data.isDay" class="data_row" ><i class="fas fa-3x fa-sun sun"></i></div>
+    <div *ngIf="!data.isDay" class="data_row"><i class="fas fa-3x fa-moon moon"></i></div>
+    <div class="data_row" style="font-size: 35px;">{{data.name}}</div>
+    <div class="data_row" style="font-size: 26px;margin-top: 5px;">Current temperature {{data.temp_curr}}&#176;</div>
+    <div class="data_row" style="margin-top: 3px;">Feels like {{data.feels_like}}&#176;</div>
+    <div class="data_row">Min/max temperature {{data.temp_min}}&#176;/{{data.temp_max}}&#176;</div>
+    <div class="data_row">Humidity: {{data.main.humidity}}%</div>
+</div>
