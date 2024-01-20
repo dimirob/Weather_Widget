@@ -1,5 +1,8 @@
 #weatherMain{
-    display:block;
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
     color:white;
     background: black;
     background: linear-gradient(black,rgb(1, 1, 145));
@@ -26,4 +29,22 @@
     font-size: 50px;
     margin-top: 10px;
     filter: drop-shadow(1px 1px 10px white);
+}
+.cloud{
+    color:rgb(111, 162, 221);
+    font-size: 50px;
+    margin-top: 10px;
+    filter: drop-shadow(1px 1px 10px rgb(111, 162, 221));
+    animation-name:cloudMovement;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.cloudDiv{
+    margin-top: -50px;
+}
+@keyframes cloudMovement{
+    from{margin-left:-50px}
+    to{margin-left:50px}
 }
