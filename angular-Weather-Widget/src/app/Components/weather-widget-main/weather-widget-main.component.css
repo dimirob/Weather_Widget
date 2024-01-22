@@ -37,7 +37,7 @@
     filter: drop-shadow(1px 1px 10px rgb(111, 162, 221));
     animation-name:cloudMovement;
     animation-iteration-count: infinite;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     animation-timing-function: linear;
     animation-direction: alternate;
 }
@@ -47,4 +47,17 @@
 @keyframes cloudMovement{
     from{margin-left:-50px}
     to{margin-left:50px}
+}
+.loader {
+    border: 7px solid #f3f3f3a6; 
+    border-top: 7px solid #17557e; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    align-self: center;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
